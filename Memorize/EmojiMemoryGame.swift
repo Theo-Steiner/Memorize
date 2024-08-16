@@ -11,7 +11,7 @@ import SwiftUI
     typealias Card = MemoryGame<String>.Card
     private static let emojis = ["🚗","🚕","✈️","🚢","🚂","🚁","🛵","🚀","🚲","🛴","🚟","🚠","🚡","🛸","🚙","🚎","🚐","🚒","🚑","🚓","🏎️","🚌","🚚","🚛","🚜"]
     private static func createMemoryGame() -> MemoryGame<String> {
-        MemoryGame<String>(numberOfPairsOfCards: 3) { index in
+        MemoryGame<String>(numberOfPairsOfCards: 5) { index in
             emojis[index]
         }
     }
