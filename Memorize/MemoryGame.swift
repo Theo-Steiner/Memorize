@@ -30,6 +30,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
             )
             cards.append(cardTwo)
         }
+        shuffle()
     }
     
     mutating func choose(_ card: Card) {
@@ -47,6 +48,10 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
                 singleOpenCardIndex = chosenIndex
             }
         }
+    }
+    
+    mutating func shuffle() {
+        cards.shuffle()
     }
 
     struct Card: Identifiable {
